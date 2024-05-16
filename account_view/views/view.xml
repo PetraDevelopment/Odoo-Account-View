@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="account_special_view" model="ir.ui.view">
+        <field name="name">account.special.view</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//div[@class='col col-md-8']" position="after">
+                    <div class="col col-md-4" style="font-size:15px; width: 10px; height:10px; white-space: nowrap;">
+                        <label for="special_view" string="Special View  "/>
+                        <span> </span>
+                        <field name="special_view"/>
+                    </div>
+        </xpath>
+
+
+        </field>
+    </record>
+
+</odoo>
